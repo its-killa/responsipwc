@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fce4ec;
+    color: #880e4f;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff0f6;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(216, 27, 96, 0.3);
+}
+
+h1 {
+    color: #d81b60;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f8bbd0;
+    color: #880e4f;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #d81b60;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #fce4ec;
+}
+
+form.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form.search-form input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #d81b60;
+    border-radius: 5px 0 0 5px;
+}
+
+form.search-form button {
+    padding: 10px 20px;
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+form.search-form button:hover {
+    background-color: #c2185b;
+}
+
+a {
+    color: #d81b60;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d81b60;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button, .btn {
+    background-color: #d81b60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #c2185b;
+}
+
+.btn-back {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #d81b60;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    form.search-form input[type="text"] {
+        width: 50%;
+    }
+}
